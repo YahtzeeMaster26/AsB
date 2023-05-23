@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AsB</title>
+		<script src="main.js"></script>
+		<script src="render.js" defer></script>
+	</head>
+	<body>
+		Mod: <input value="3" id="mod"><br>
+		Sum #: <input value="8" id="sum"><br>
+		Pixel Size: <input value="10" id="size"><br>
+		<button onclick="renderAllLoopsHTML()">Render</button>
+		<hr>
+		For large images, you may need to reduce pixel size for them to render properly.<br>
+		Also, the time for the image to generate is in the neighborhood of O(mod^sum*sum), so you shouldn't put in values that are too high.
+		<hr>
+		<canvas style="image-rendering: crisp-edges;" width="0" height="0"></canvas>
+	</body>
+</html>
